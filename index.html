@@ -1,0 +1,26 @@
+<html >
+<head>
+  <title>Churn Prediction</title>  
+</head>
+
+<body>
+ <div>
+	<h1>Predict Churn</h1>
+
+    <form action="{{ url_for('getprediction')}}"method="post">
+	<input type="text" name="location" placeholder="Location" required="required" /><br>
+    	<input type="number" name="age" placeholder="Age" required="required" /><br>
+        <input type="number" name="monthly_bill" placeholder="Monthly_Bill" required="required" /><br>
+	<input type="number" name="subs_length" placeholder="Subscription_Length_Months" required="required" /><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Get Prediction</button>
+    </form>
+
+   <br>
+   <br>
+   
+
+ </div>
+
+
+</body>
+</html>
